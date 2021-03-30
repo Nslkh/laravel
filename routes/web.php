@@ -16,8 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/products', [ProductsController::class, 'index']);
 
-Route::get('/products/{name}', [ProductsController::class, 'show']);
+// Pattern is integer
+// Route::get(
+//     '/products/{id}',
+//     [ProductsController::class, 'show'])->where('id', '[0-9]+');
 
-// products = all products
-// products/productName
-// products/productId
+    // Pattern is string
+Route::get(
+    '/products/{name}',
+    [ProductsController::class, 'show']
+)->where('name', '[a-zA-Z]+');
