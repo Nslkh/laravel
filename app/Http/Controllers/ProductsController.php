@@ -13,7 +13,8 @@ class ProductsController extends Controller
 
         $data = [
             'productOne' => 'iPhone',
-            'productTwo' => 'Samsung'
+            'productTwo' => 'Samsung',
+            'controllers' => 'Controllers done'
         ];
 
         // Compact method
