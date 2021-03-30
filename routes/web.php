@@ -23,6 +23,9 @@ Route::get('/products', [ProductsController::class, 'index']);
 
     // Pattern is string
 Route::get(
-    '/products/{name}',
+    '/products/{name}/{id}',
     [ProductsController::class, 'show']
-)->where('name', '[a-zA-Z]+');
+)->where([
+      'name' => '[a-z]+',
+      'id' => '[0-9]+'
+    ]);
