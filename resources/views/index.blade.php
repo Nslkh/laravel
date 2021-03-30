@@ -19,7 +19,7 @@
 <!-- Every div is a grid item -->
 <div class="container-grid-4">
   <div>
-      <img src="storage /icon-box.jpg" alt="">
+      <img src="storage/icon-box.jpg" alt="">
       <h2>
           Web Design
       </h2>
