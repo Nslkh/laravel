@@ -13,6 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route that sends back a view
 Route::get('/', function () {
     return view('welcome');
+});
+
+// Route to Users - string
+// Route::get('/users', function () {
+//     return 'Welcome to the users Page';
+// });
+
+
+//Route to users -ARRAY(JSON)
+Route::get('/users', function () {
+    return ['PHP', 'LARAVEL'];
+});
+
+// Route to users - JSON object
+Route::get('/users', function () {
+    return response()->json([
+        'name' => 'narzullo',
+        'course' => 'Laravel Beginners to Advanced',
+    ]);
+});
+
+// Route to users - function
+Route::get('/users', function () {
+    return redirect('/');
 });
