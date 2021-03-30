@@ -23,3 +23,12 @@
 @empty
     <h2>THere are no names</h2>
 @endforelse
+
+{{-- while loop is mostly used to evaluate expressions inside the parenthesses --}}
+
+{{ $i = 0 }}
+@while ($i < 10)
+   <h2>{{ $i }}</h2>
+   {{ $i++ }}
+    
+@endwhile

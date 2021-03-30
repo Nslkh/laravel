@@ -13,8 +13,8 @@ class PagesController extends Controller
 
     public function about()
     {
-        $names = [];
-
+        $names = ['Ali', 'Aliya', 'Bilal'];
+        
         return view('about', [
             'names' => $names
         ]);
