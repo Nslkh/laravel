@@ -13,7 +13,10 @@ class PagesController extends Controller
 
     public function about()
     {
-        $name = "John";
-        return view('about')->with('name', $name);
+        $names = [];
+
+        return view('about', [
+            'names' => $names
+        ]);
     }
 }

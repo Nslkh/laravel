@@ -11,4 +11,15 @@
 @for ($i = 0; $i <= 10; $i++)
     <h2>The number is {{ $i }}</h2>  
 @endfor
+        {{-- $names -- the entire param we want to loop through --}}
+        {{-- we have keyboars as coz we dont want to print out entire array but specific element --}}
 
+@foreach ($names as $name)
+    <h2>The name is {{ $name }}</h2>
+@endforeach
+
+@forelse ($names as $name)
+    <h2>The name is {{ $name }}</h2>
+@empty
+    <h2>THere are no names</h2>
+@endforelse
