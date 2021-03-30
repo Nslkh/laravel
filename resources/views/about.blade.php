@@ -1,19 +1,14 @@
 {{-- 
-    Comparing Multiple possible conditions 
-    Multiple values that may require the same code
+   For Loop 
+   Foreach Loop 
+   For else Loop 
+   While Loop 
 --}}
+{{-- FOR LOOP  3 Param
+    1-initialization which is used to initialize the counter variable
+    2-condition - evaluation if this is true the loop will continue & False loop ends
+    3-update loop counter with the new value --}}
+@for ($i = 0; $i <= 10; $i++)
+    <h2>The number is {{ $i }}</h2>  
+@endfor
 
-@switch($name)
-    @case('Ali')
-        <h2>Name is Ali!</h2>
-        @break
-    @case('Aliya')
-        <h2>Name is Aliya !</h2>
-        @break
-    @case('John')
-        <h2>Name is John!</h2>
-        @break    
-    @default
-        <h2>No Match Found</h2>
-        
-@endswitch
