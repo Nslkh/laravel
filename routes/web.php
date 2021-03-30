@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-  //Laravel -8 (NEW)
 Route::get('/products', [ProductsController::class, 'index']);
-Route::get('/products/about', [ProductsController::class, 'about']);
 
-// // Before Laravel  8
-// Route::get('/products', 'ProductsControllers@index');
+Route::get('/products/{name}', [ProductsController::class, 'show']);
+
+// products = all products
+// products/productName
+// products/productId
