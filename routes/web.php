@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +20,4 @@ Route::get('/', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'about']);
 
 // Posts Endpoint
-Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts', [PostsController::class, 'index']);
