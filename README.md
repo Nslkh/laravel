@@ -1,5 +1,32 @@
 ## How to Compile Assets
 - Go to webpack.mix.js  change css to scss
+- Go resources folder. Create scss folder - app.scss
+- npm install, npm run dev
+
+## Laravel frontend preset 
+- https://github.com/laravel-frontend-presets
+
+# Laravel 7.0+ Frontend preset for Tailwind CSS
+
+A Laravel front-end scaffolding preset for [Tailwind CSS](https://tailwindcss.com) - a Utility-First CSS Framework for Rapid UI Development.
+
+## Usage
+
+1. Fresh install Laravel >= 7.0 and `cd` to your app.
+2. Install this preset via `composer require laravel-frontend-presets/tailwindcss --dev`. Laravel will automatically discover this package. No need to register the service provider.
+
+### a. For Presets without Authentication
+
+1. Use `php artisan ui tailwindcss` for the basic Tailwind CSS preset
+2. `npm install && npm run dev`
+3. `php artisan serve` (or equivalent) to run server and test preset.
+
+## ISSUE
+- 'mix' is not recognized as an internal or external command,
+operable program or batch file.
+
+## Answer
+- $ npm install laravel-mix@latest --save-dev
 
 ## Databases & Migrations
 
