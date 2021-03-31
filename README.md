@@ -1,3 +1,6 @@
+## How to Compile Assets
+- Go to webpack.mix.js  change css to scss
+
 ## Databases & Migrations
 
 - Go to .env , customize it 
