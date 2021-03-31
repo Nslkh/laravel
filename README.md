@@ -53,3 +53,9 @@ operable program or batch file.
 - php artisan migrate:fresh  -- drop the table  and run every available migration the same as REFRESH but won't use DOWN migration it will just delete the tables then run up migration again
 - php artisan migrate:rollback  -- which roll it back 
 - php artisan migrate:status  -- show table listing of every migration weather or not has been run yet this environment 
+
+## Models Factories
+- php artisan make:factory PostFactory
+- php artisan tinker
+- \App\Models\Posts::factory()->create();
+
